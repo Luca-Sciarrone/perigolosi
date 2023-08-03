@@ -1,0 +1,676 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* fascia menu */
+#fascia_menu {
+    height: 80px;
+    background-color: #e95d0f;
+}
+
+#contenuto_fascia_menu {
+    max-width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contenuto_fascia_menu a {
+    text-decoration: none;
+}
+
+.ancore_menu {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.logo {
+    height: 80px;
+}
+
+.menu_responsive {
+    display: none;
+}
+
+/* slider */
+#slider {
+    height: 730px;
+    background-color: #bebebe;
+    background-image: url(../img/slider_tipi_perigolosi.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 215px;
+}
+
+section#slider {
+    background-image: url(../img/nostri_gelati.webp);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+#testo_slider {
+    text-align: center;
+    color: #ffffff;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 80px;
+}
+
+#corsivo_slider {
+    font-style: italic;
+}
+
+/* fascia chi siamo bianca */
+#fascia_chisiamo_bianca {
+    height: 730px;
+    background-color: #ffffff;
+    background-image: url(../img/coni-gelato.webp);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#fascia_chisiamo_bianca h2 {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 42px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+#fascia_chisiamo_bianca p {
+    text-align: center;
+    font-size: 22px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    margin-top: 40px;
+}
+
+#scopri_gusti {
+    color: #b8e063;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #b8e063;
+    display: block;
+    width: 210px;
+    height: 50px;
+    margin: 35px auto 0;
+    text-align: center;
+    line-height: 50px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#scopri_gusti:hover {
+    background-color: #b8e063;
+    color: #fff;
+}
+
+#scopri_gusti:active {
+    background-color: #e95d0f;
+    color: #fff;
+}
+
+/* fascia chi siamo verde */
+#fascia_chisiamo_verde {
+    /* height: 750px; */
+    background-color: #b8e063;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fascia_chisiamo_verde h2, #paragrafo_chisiamo_verde {
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    flex-basis: 100%;
+}
+
+#fascia_chisiamo_verde h2 {
+    padding-top: 50px;
+    font-size: 42px;
+}
+
+#paragrafo_chisiamo_verde {
+    margin: 35px 0;
+    font-size: 22px;
+}
+
+#paragrafi_destra {
+    flex-basis: 365px;
+    padding-left: 20px;
+    margin-top: 45px;
+}
+
+#paragrafi_destra p, #paragrafi_destra p span {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#paragrafi_destra p {
+    font-size: 14px;
+    background: url(../img/freccia.webp) no-repeat;
+    padding-left: 60px;
+    margin-bottom: 45px;
+}
+
+#paragrafi_destra p span {
+    display: block;
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+#paragrafi_destra a {
+    display: block;
+    width: 305px;
+    height: 45px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #93117e;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #93117e;
+    line-height: 45px;
+    margin-left: 50px;
+}
+
+#paragrafi_destra a:hover {
+    background-color: #93117e;
+    color:#b8e063;
+}
+
+#paragrafi_destra a:active {
+    background-color: #fff;
+    color: #93117e;
+}
+
+/* fascia gelateria */
+#fascia_gelateria {
+    height: 735px;
+    background-color: #f3f6f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fascia_gelateria h2, #fascia_gelateria p {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#fascia_gelateria h2 {
+    padding-top: 65px;
+    font-size: 42px;
+    font-weight: 300;
+}
+
+#paragrafo_princ_fascia_gelateria {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.riquadro_omino_lente {
+    flex-basis: 285px;
+    padding: 30px;
+}
+
+.riquadro_omino_lente img {
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.paragrafi_fascia_gelateria {
+    font-size: 14px; 
+}
+
+.paragrafi_fascia_gelateria span {
+    font-size: 20px;
+}
+
+#ultimo_paragrafo_fascia_gelateria {
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 65px;
+}
+
+/* fascia nostri gelati */
+#fascia_nostri_gelati {
+    /* height: 735px; */
+    background-color: #f39400;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fascia_nostri gelati h2, #fascia_nostri_gelati p {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+}
+
+#fascia_nostri_gelati h2 {
+    font-size: 42px;
+    font-weight: 300;
+    padding-top: 70px;
+}
+
+#fascia_nostri_gelati p {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+#elenco {
+    margin-left: 80px;
+    flex-basis: 335px;
+}
+
+#elenco ul li {
+    list-style-image: url(../img/flag.webp);
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* fascia orari */
+#fascia_orari {
+    height: 735px;
+    background-color: #2ecc71;
+}
+
+#fascia_orari h2, #fascia_orari p {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+#fascia_orari h2 {
+    font-size: 42px;
+    font-weight: 300;
+    padding-top: 60px;
+}
+
+#fascia_orari p {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+table, th, td {
+    border: 2px solid #fff;
+}
+
+table {
+    margin: 40px auto 0;
+    width: 880px;
+    height: 355px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-collapse: collapse;
+}
+
+caption {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+caption, tr {
+    height: 47px;
+}
+
+/* fascia informazioni */
+#fascia_informazioni {
+    height: 730px;
+     background-color: #f3f6f8;
+ }
+
+ #fascia_informazioni h2, #paragrafo_informazioni {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+#fascia_informazioni h2 {
+    font-size: 42px;
+    font-weight: 300;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+#paragrafo_informazioni {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+#contenitore_form {
+    /* border: 2px solid royalblue; */
+    width: 800px;
+    margin: 70px auto 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label, input, textarea {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #78797a;
+}
+
+.nome_email {
+    flex-basis: 48%;
+}
+
+.email {
+    margin-left: auto;
+}
+
+.full {
+    flex-basis: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #b9e164;
+    padding: 0;
+    height: 40px;
+}
+
+ /* fascia mappa */
+ #fascia_mappa {
+    height: 385px;
+    background-color: #f0ede5;
+}
+
+#mappa {
+    width: 100%;
+}
+
+/* fascia contatti */
+#fascia_contatti {
+    height: 340px;
+    background-color: #009ee1;
+    padding-top: 30px;
+}
+
+#riquadro_contatti {
+    width: 410px;
+    margin: 0 auto;
+    border: 2px solid #004a99;
+    position: relative;
+}
+
+#riquadro_contatti h2, #riquadro_contatti p {
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#riquadro_contatti h2 {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+#riquadro_contatti p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+#titolo_contatti {
+    text-transform: uppercase;
+}
+
+#link_contatti {
+    color: #000;
+    text-decoration: none;
+}
+
+#link_contatti:hover {
+    color: #fff;
+}
+
+#riquadro_contatti img {
+    position: absolute;
+    left: 395px;
+    top: 35px;
+}
+
+/* fascia footer */
+#fascia_footer {
+    height: 50px;
+    background-color: #f39400;
+}
+
+#fixed_ribbon {
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+
+/* Pagina Login */
+#contenitore_login {
+        width: 500px;
+        height: 600px;
+        background-color: #fff;
+        padding: 55px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px #333;
+        
+     }
+    
+     #contenitore_login img {
+        display: block;
+        margin: 0 auto;
+     }
+    
+     #form_login {
+        flex-direction: column;
+        justify-content: space-evenly;
+     }
+    
+     #form_login .nome_email {
+        margin: 25px 0;
+     }
+    
+     #form_login input[type="email"], #form_login
+    input[type="password"] {
+        height: 45px;
+     }
+    
+     #resta_connesso {
+        width: auto;
+        margin-right: 10px;
+     }
+    
+     #submit_login input {
+    
+        border-radius: 50px;
+        width: 250px;
+        display: block;
+        margin: 25px auto;
+     }
+    
+     #form_login a {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 12px;
+        text-decoration: none;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+        color: #78797a;
+     }
+
+ #form_login a:hover {
+    text-decoration: underline;
+ }
+
+#body_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(243,148,0);
+    background: -moz-linear-gradient(50deg, rgba(243,148,0,1) 0%, rgba(255,137,137,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(50deg, rgba(243,148,0,1) 0%, rgba(255,137,137,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(50deg, rgba(243,148,0,1) 0%, rgba(255,137,137,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f39400",endColorstr="#00d4ff",GradientType=1);
+}
+
+/* Pagine interne */
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/**
+
+RESPONSIVE
+
+**/
+
+@media only screen and (max-width: 960px) {
+    .ancore_menu {
+        display: none;
+    }
+
+    .menu_responsive {
+        display: block;
+        margin-right: 80px;
+        cursor: pointer;
+    }
+
+    .menu_responsive span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+
+    }
+
+    .menu_responsive span:nth-child(2) {
+        margin: 5px 0;
+    }
+
+}
+
+@media only screen and (max-width:595px) {
+    #slider {
+        height: 780px;
+    }
+}
+
+@media only screen and (max-width:605px){
+    #fascia_chisiamo_bianca {
+        height: 830px;
+    }
+}
+
+@media only screen  and (max-width:905px) {
+    #fascia_chisiamo_verde {
+        padding-bottom: 50px;
+        height: 100%;
+    }
+
+    #fascia_gelateria {
+        padding: 0 20px;
+    }
+
+    table, #contenitore_form {
+        width: 90%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .email {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:620px) {
+    #fascia_chisiamo_verde {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #immagine_sinistra img, #immagine_tonda img {
+        width: 100%;
+        height: auto;
+    }
+
+    #fascia_chisiamo_verde #paragrafi_destra,
+    #fascia_nostri_gelati #elenco {
+        order: 1;
+        padding-bottom: 50px;
+    }
+
+    #fascia_chisiamo_verde #immagine_sinistra,
+    #fascia_nostri_gelati #immagine_tonda {
+        order: 2;
+    }
+
+    #fascia_gelateria {
+        height: auto;
+    }
+
+    input[type="submit"] {
+        -webkit-appearance: none;
+    }
+
+    #riquadro_contatti {
+        width: 80%;
+    }
+
+    #riquadro_contatti img {
+        display: none;
+    }
+
+    #fixed_ribbon {
+        display: none;
+    }
+}
+
+@media (max-width:360px) {
+    #paragrafi_destra a {
+        margin-left: 0;
+    }
+
+    #elenco {
+        margin-left: 55px;
+    }
+}
+

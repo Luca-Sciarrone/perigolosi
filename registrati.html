@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrati</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75MXQK2823"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-75MXQK2823');
+    </script>
+</head>
+
+<body>
+    <form action="elabora_registrazione.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dati personali</legend>
+            <div>
+                <label for="nome_for">Nome</label><br>
+                <input type="text" name="nome" id="nome_for" autofocus placeholder="Inserisci il tuo nome"
+                    autocomplete="off">
+            </div>
+            <div>
+                <label for="cognome_for">Cognome</label><br>
+                <input type="text" name="cognome" id="cognome_for">
+            </div>
+            <div>
+                <label>Sesso</label><br>
+                <input type="radio" name="sesso" value="maschile"> Maschile
+                <input type="radio" name="sesso" value="femminile"> Femminile
+                <input type="radio" name="sesso" value="altro"> Altro
+            </div>
+            <div>
+                <label>Seleziona la provincia di Provenienza:</label><br>
+                <select name="citta" multiple size="17">
+                    <option value="scegli">--Scegli--</option>
+                    <optgroup label="Veneto">
+                        <option value="belluno">Belluno</option>
+                        <option value="padova" selected>Padova</option>
+                        <option value="rovigo">Rovigo</option>
+                        <option value="treviso">Treviso</option>
+                        <option value="venezia">Venezia</option>
+                        <option value="verona">Verona</option>
+                        <option value="vicenza">Vicenza</option>
+                    </optgroup>
+                    <optgroup label="Lombardia">
+                        <option value="milano">Milano</option>
+                        <option value="bergamo">Bergamo</option>
+                        <option value="brescia">Brescia</option>
+                    </optgroup>
+                    <optgroup label="Friuli venezia Giulia">
+                        <option value="trieste">Trieste</option>
+                        <option value="udine">Udine</option>
+                        <option value="gorizia">Gorizia</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="telefono_for">Inserisci il tuo numero di telefono</label>
+                <input type="tel" name="telefono" id="telefono_for" pattern="[0-9]+">
+            </div>
+            <div>
+                <label for="eta_for">Inserisci la tua et&agrave;</label>
+                <input type="number" name="eta" id="eta_for">
+            </div>
+        </fieldset>
+        <label>Inserisci un&#8217;immagine per il tuo profilo</label>
+        <input type="file" name="immagine" multiple>
+        <div>
+            <label>Hobby</label><br>
+            <input type="checkbox" name="web_design" value="web Design" checked> Web Design <br>
+            <input type="checkbox" name="web_marketing" value="web Marketing"> Web Marketing <br>
+            <input type="checkbox" name="web_developer" value="web Developer"> Web Developer <br>
+            <input type="checkbox" name="grafica" value="Grafica"> Grafica <br>
+        </div>
+        <div>
+            <label for="indirizzo_for">Inserisci il tuo indirizzo web</label>
+            <input type="url" name="indirizzo" id="indirizzo_for">
+        </div>
+        <div>
+            <label for="password_for">Inserisci una password</label>
+            <input type="password" name="password" id="password_for" maxlength="10">
+        </div>
+        <div>
+            <input type="rest" value="Cancella i dati inseriti">
+            <input type="image" src="img/button_invia.gif" alt="Invia i dati">
+        </div>
+    </form>
+</body>
+
+</html>

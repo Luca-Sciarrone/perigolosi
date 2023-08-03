@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-75MXQK2823"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-75MXQK2823');
+    </script>
+    <title>Login - Tipi perigolosi</title>
+    <link rel="icon" href="img/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body_login">
+    <div id="contenitore_login">
+        <img src="img/tipi_perigolosi.webp" alt="tipi_pergolosi" id="immagine_login" width="224" height="80">
+
+        <form id="form_login" action="login.php" method="post">
+            <div class="nome_email">
+                <label for="email_for">E-mail</label><br>
+                <input id="email_for" name="email" type="email" placeholder="Inserisci la tua email"><br>
+            </div>
+            <div class="nome_email">
+                <label for="password_login">Password</label><br>
+                <input id="password_login" name="password" type="password" placeholder="Inserisci la tua password"><br>
+                <input id="resta_connesso" type="checkbox" name="resta_connesso" value="connesso" checked>
+                <label>Resta connesso</label>
+            </div>
+            <div id="submit_login">
+                <input type="submit" value="invia">
+            </div>
+            <a href="password-dimenticata.php" title="recupera
+la tua password">
+                Hai dimenticato la password?
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>
